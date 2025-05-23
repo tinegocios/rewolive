@@ -48,7 +48,20 @@
             <h2 class="mb-3">Pasantías</h2>
             <p>Ayudamos a los miembros a encontrar pasantías que les permitan dar sus primeros pasos profesionales. Trabajamos con compañías que buscan talento y entusiasmo para proyectos reales.</p>
         </div>
-        <!-- TODO: Aqui deberíamos tener una galería de fotos de algunas empresas en donde hay pasantías activas, aun no tenemos las imagenes, pero dejemos colocada la galería con los espacios ya colocados -->
+        <div class="row row-cols-2 row-cols-md-4 g-3 mt-4">
+            <div class="col">
+                <img src="https://via.placeholder.com/200x150?text=Empresa+1" class="img-fluid rounded" alt="Empresa 1">
+            </div>
+            <div class="col">
+                <img src="https://via.placeholder.com/200x150?text=Empresa+2" class="img-fluid rounded" alt="Empresa 2">
+            </div>
+            <div class="col">
+                <img src="https://via.placeholder.com/200x150?text=Empresa+3" class="img-fluid rounded" alt="Empresa 3">
+            </div>
+            <div class="col">
+                <img src="https://via.placeholder.com/200x150?text=Empresa+4" class="img-fluid rounded" alt="Empresa 4">
+            </div>
+        </div>
     </section>
 
     <!-- Lives de formación -->
@@ -56,7 +69,9 @@
         <div class="container">
             <h2 class="mb-3">Lives de formación</h2>
             <p>Realizamos sesiones en vivo donde profundizamos en nuevas tecnologías, buenas prácticas y consejos para desenvolverte en la industria. ¡Únete a nuestras transmisiones semanales!</p>
-            <!-- TODO: Dejemos una vista previa de un video de youtube: https://www.youtube.com/live/BkP1M3dqHqo -->
+            <div class="ratio ratio-16x9 mt-4">
+                <iframe src="https://www.youtube.com/embed/BkP1M3dqHqo" title="Video de presentación" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
@@ -77,7 +92,25 @@
         <div class="container">
             <h2 class="mb-3">Contacto</h2>
             <p>¿Quieres unirte o tienes alguna pregunta? Escríbenos a <a href="mailto:info@rewolive.com">info@rewolive.com</a>.</p>
-            <!-- TODO: Crear un formulario con nombre, correo y whatsapp además de los que quieran comentar, aun no tiene endpoint, pero dejar la estructura. -->
+            <form class="mt-4">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="correo" placeholder="tu@correo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="whatsapp" class="form-label">Whatsapp</label>
+                    <input type="tel" class="form-control" id="whatsapp" placeholder="Ej. +123456789">
+                </div>
+                <div class="mb-3">
+                    <label for="comentarios" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" disabled>Enviar</button>
+            </form>
         </div>
     </section>
 
